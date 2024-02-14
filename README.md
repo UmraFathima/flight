@@ -1,5 +1,8 @@
 Airway Customer Satisfaction Prediction
 
+![Screenshot 2023-12-11 211044](https://github.com/UmraFathima/flight/assets/154687173/77e5a02f-07a0-4e3d-bce5-2f5304cdcb38)
+
+
 This repository contains a machine learning project aimed at predicting the satisfactory level of customers for an airways company. The project utilizes the Django framework for backend development, with Python as the primary backend language. For frontend development, HTML and CSS are used. The model is trained using a dataset sourced from a .csv file.
 
 Project Overview
