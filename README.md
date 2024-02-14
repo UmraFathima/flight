@@ -41,3 +41,4 @@ bash
 cd airway-customer-satisfaction python manage.py runserver
 
 Access the application in your web browser at http://localhost:8000
+![image](https://github.com/UmraFathima/flight/assets/154687173/b7464618-09f4-40d0-b9d6-2362d479e72e)
