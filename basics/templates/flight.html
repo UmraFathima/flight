@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'flight.css'%}">
+</head>
+
+<body>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+
+<div class="asteroid">Prediction of Customer Satisfaction</div>
+
+    <form method="POST" class="formm">
+        {% csrf_token %}
+ 
+    <img src="nasa.jpg" alt="error" width="50%" height="50%">
+        <div class="containeer1">
+            <div>Age <br>
+
+                <input type="text" placeholder="Enter Age" name="neo" class="ip1">
+            </div>
+
+            <div> Flight Distance <br>
+
+                <input type="text" placeholder="Enter Flight Distance" name="onekm" class="ip1">
+            </div>
+
+            <div>In Flight Wifi Service <br>
+                <input type="text" placeholder=" Rate Wifi service 0-5" name="pha" class="ip1">
+            </div>
+
+            <div>
+                D/A Time convinient <br>
+                <input type="text" placeholder=" Rate Time convinient 0-5" name="absolmag" class="ip1">
+            </div>
+
+            <div>Ease of Online Booking <br>
+                <input type="text" placeholder=" Rate Online Booking 0-5" name="sloppara" class="ip1">
+            </div>
+
+            <div>Gate Location <br>
+                <input type="text" placeholder="Rate Gate Location 0-5" name="numbsobs" class="ip1">
+            </div>
+
+            <div>
+                Food and Drink<br>
+                <input type="text" placeholder="Rate Food & Drink  0-5 " name="rmsresi" class="ip1">
+            </div>
+
+            <div> Online Boarding <br>
+                <input type="text" placeholder="Rate Online Boarding 0-5" name="uncerpara" class="ip1">
+            </div>
+
+            <div>Seat Comfort <br>
+                <input type="text" placeholder="Rate Seat Comfort 0-5" name="epoch" class="ip1">
+            </div>
+
+            <div>Inflight Entertain <br>
+                <input type="text" placeholder="Rate Inflight Entertain 0-5" name="meanano" class="ip1">
+            </div>
+
+            <div>OnBoard Service <br>
+                <input type="text" placeholder="Rate OnBoard Service 0-5" name="arguperi" class="ip1">
+            </div>
+
+            <div>Leg Room Service <br>
+                <input type="text" placeholder="Rate Leg Room service 0-5 " name="node" class="ip1">
+            </div>
+
+            <div>Baggage Handling <br>
+                <input type="text" placeholder="Rate Baggage Handling 0-5" name="ecliptic" class="ip1">
+            </div>
+
+            <div>
+                Checkin Service <br>
+                <input type="text" placeholder="Rate Checkin Service 0-5" name="eccentricity" class="ip1">
+            </div>
+
+            <div>Inflight Service <br>
+                <input type="text" placeholder="Rate Inflight Service 0-5" name="meanmotion" class="ip1">
+            </div>
+
+            <div>Cleanliness <br>
+                <input type="text" placeholder="Rate Cleanliness 0-5" name="axis" class="ip1">
+            </div>
+
+            <div> Departure Delay  <br>
+                <input type="text" placeholder="Departure Delay in minutes" name="numops" class="ip1">
+            </div>
+
+            <div>Arrival Delay<br>
+                <input type="text" placeholder="Arrival Delay in Minutes" name="tp" class="ip1">
+            </div>
+
+            <div>Gender Male <br>
+                <input type="text" placeholder="if your Male thn 1 else 0 " name="orbitalperiod" class="ip1">
+            </div>
+
+            <div>Gender Female <br>
+                <input type="text" placeholder="if your Female thn 1 else 0" name="peridist" class="ip1">
+            </div>
+
+            <div>Business Travel<br>
+                <input typ="text" placeholder="if Business Travel thn 1 else 0" name="aphedist" class="ip1">
+            </div>
+
+            <div >Personal Travel<br>
+                <input type="text" placeholder="if Personal travel thn 1 else 0" name="semirectum" class="ip1">
+            </div>
+
+            <div>Class Business<br>
+                <input type="text" placeholder="if Business Class 1 else 0" name="synoperiod" class="ip1">
+            </div>
+            <div>Class Economic<br>
+                <input type="text" placeholder="if Economics Class 1 else 0" name="synoperiod1" class="ip1">
+            </div>
+            <div>Class Economic +<br>
+                <input type="text" placeholder="if Economics + Class 1 else 0" name="synoperiod2" class="ip1">
+            </div>
+
+            <div>
+                <button type="submit" style="background-color: cadetblue;" name="buttonflo" id="containeer3">Submit</button>
+                <div class="ress">
+                    {{result}}
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
